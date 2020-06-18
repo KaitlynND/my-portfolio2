@@ -86,6 +86,8 @@ public void doGet(HttpServletRequest request, HttpServletResponse response) thro
 // employee.setProperty("hireDate", new Date());
  employee.setProperty("attendedHrTraining", true);
 
+ //Practicing pull requests on GitHub
+
  DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
  datastore.put(employee);
  
