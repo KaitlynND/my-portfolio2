@@ -7,8 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
       </head>
-  
-  
+
+        <button onclick="getDataServlet()"> Click here</button>
+        <div id="dataserve"></div>
+
+        
+       <button onclick="getJstring()">Fetch json!</button>
+        <ul id="json"></ul>
+
+       
+        <h3> Form </h3>
+        <form action="/data" method="POST">
+        <textarea name="text-input"></textarea>
+            <input type="submit" />
+            
+
+        </form>
+
+        <h3> Tasks </h3>
+        <body onload="loadTasks()">
+
+        <form method="POST" action="/data">
+            <input type="text" name="title" />
+            <br/>
+            <button>Submit</button>
+        </form>
+
+    <hr/>
+
+    <ul id="task-list"></ul>
   <body>
  <div id="content">
    <!-- <h1 style="background-color:MediumSeaGreen;"></h1> -->
