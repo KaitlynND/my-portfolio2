@@ -21,4 +21,10 @@
   clear: both;
   display: table;
 }
+#map {
+  float: right;
+  border: thin solid black;
+  height: 350px;
+  width: 350px;
+}
 

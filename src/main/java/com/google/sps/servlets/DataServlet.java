@@ -83,10 +83,12 @@ public void doGet(HttpServletRequest request, HttpServletResponse response) thro
  Entity employee = new Entity("Employee", "asalieri");
  employee.setProperty("firstName", "Antonio");
  employee.setProperty("lastName", "Salieri");
-// employee.setProperty("hireDate", new Date());
+//employee.setProperty("hireDate", new Date());
  employee.setProperty("attendedHrTraining", true);
 
  //Practicing pull requests on GitHub
+ //more practice for GitHub
+
 
  DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
  datastore.put(employee);
